@@ -271,7 +271,51 @@ main .opening .opening-time div time {
   padding: 2em 0 1em;
   font-weight: 700;
   font-size: 40px;
+  position: relative;
 }
+
+
+
+
+
+.testimonial h2::before {
+  content: ''; 
+  position: absolute;
+  width: 25%; 
+  height: 2px; 
+  background-color: #fff; 
+  top: 61%; 
+  right : 9%;
+}
+.testimonial h2::after {
+  content: ''; 
+  position: absolute;
+  width: 25%; 
+  height: 2px; 
+  background-color: #fff; 
+  top: 61%; 
+  left: 9%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .testimonial-cards {
   display: flex;
   justify-content: space-around;
