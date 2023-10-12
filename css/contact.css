@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --brownButton: #b77e66;
+  --white: #ffffff;
+  --h2: #471e22;
+  --menu-h2: #903711;
+  --menu-h3: #9e5a3d;
+  --menu-card: #734a39;
+  --menu-p: #fffada;
+  --testimonial-card: rgb(88, 49, 21, 0.5);
+  --testimonial-h4: #54dd8b;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header.header {
+  background-image: url("../images/contact-us-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+header .logo {
+  width: 146px;
+  height: 88px;
+  margin-left: 8em;
+}
+header .menu {
+  display: grid;
+  grid-template: 100px / repeat(2, 1fr);
+  padding-top: 2%;
+  margin-right: 3em;
+}
+header .menu nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .menu nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 3.5;
+  margin-left: 6em;
+}
+
+header h1 {
+  font-size: 80px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-top: 2em;
+  text-align: center;
+  text-shadow: 2px 4px rgb(45, 43, 43, 0.7);
+}
+main{
+    margin: 5em 0;
+}
+.img-relative {
+  position: relative;
+}
+.img-relative .form {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  background-color: #fff;
+  width: 55%;
+  padding: 3em;
+  box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.29);
+  border-radius: 40px;
+}
+.img-relative .form h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+.img-relative .form label {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.img-relative .form input,
+textarea {
+  width: 100%;
+  margin: 1px auto;
+  background: none;
+  border: 2px solid #6c625f;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+.form form button {
+  background-color: var(--brownButton);
+  display: block;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: auto;
+}
+
+/* footer */
+.overlay {
+  background-color: rgb(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+}
+footer {
+  background-image: url("../images/footerImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-ele {
+  display: flex;
+  justify-content: space-around;
+  color: var(--white);
+  padding-top: 15em;
+}
+footer ul li a {
+  color: var(--white);
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+footer .logo img {
+  width: 146px;
+  height: 88px;
+}
+footer address {
+  margin: 0.5em 0;
+}
+footer .tel {
+  color: var(--white);
+}
+footer .copyright {
+  text-align: center;
+  color: var(--white);
+  padding-top: 18em;
+}
