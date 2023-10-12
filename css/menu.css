@@ -11,7 +11,8 @@
   --testimonial-h4: #54dd8b;
 }
 
-html,body {
+html,
+body {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -193,16 +194,16 @@ header.header {
   }
   div.filter-products {
     background-color: #734a3938;
-    padding: 10px 0 0 0 ;
+    /* padding: 10px 0 0 0; */
     order: 1;
   }
-  .filter-products .block-filter {
+  .flex-products div.filter-products {
     display: flex;
     flex-direction: row;
     padding: 1px 6px;
     justify-content: space-between;
   }
-  .filter-products .block-filter > * {
+  div.filter-products > * {
     flex-grow: 1;
     font-size: 8px;
     margin: 1em auto;
@@ -251,13 +252,13 @@ header.header {
     margin-bottom: 0.1em;
   }
 
-  .filter-products .block-filter button {
+  div.filter-products button {
     background-color: #fff;
     border: none;
-    margin: 0 2px;
+    margin: 3px !important;
     font-size: 10px;
     font-weight: 600;
-    padding: 8px ;
+    padding: 8px;
   }
 
   footer div.footer-ele {
@@ -332,7 +333,7 @@ header p {
 
 .flex-products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 20%;
+  grid-template-columns: repeat(3, 1fr) 23%;
   gap: 20px;
 }
 
@@ -368,25 +369,24 @@ header p {
   /* margin-left: 0.5em; */
   border-radius: 1px !important;
 }
-.block-filter {
+div.filter-products {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-.filter-products .block-filter button {
+div.filter-products button {
   background-color: #fff;
-  margin-bottom: 2em;
+  margin: 15px 0;
   border-radius: 4px !important;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.filter-products .block-filter button:hover{
+div.filter-products button:hover {
   background-color: var(--menu-card);
   color: #fff;
 }
 
-
-.block-filter > * {
+div.filter-products > * {
   margin: 0.1em auto;
   padding: 1em;
   width: 50%;
